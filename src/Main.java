@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         if (args == null || new Main() {{
@@ -7,5 +9,14 @@ public class Main {
         } else {
             System.out.println('b');
         }
+    }
+
+    public static Date getNextDay() {
+        try {
+            Thread.sleep(24 * 60 * 60 * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return new Date();
     }
 }
