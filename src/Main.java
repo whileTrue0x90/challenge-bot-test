@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello JAVA");
+        if (args == null || new Main() {{
+            Main.main(null);
+        }}.equals("123")) {
+            System.out.print('a');
+        } else {
+            System.out.println('b');
+        }
     }
 }
