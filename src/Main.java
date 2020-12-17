@@ -14,5 +14,4 @@ public class Main {
         return new Date();
     }
 
-    // nothing to do !!!
 }
