@@ -14,4 +14,10 @@ public class Main {
         return new Date();
     }
 
+    public static boolean isNullString(String str) {
+        if (null == String.valueOf(str)) {
+            return true;
+        }
+        return false;
+    }
 }
